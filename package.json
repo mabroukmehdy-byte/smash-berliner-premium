@@ -15,9 +15,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -47,5 +47,5 @@
     "postcss": "^8.5.12",
     "tailwindcss": "^3.4.17"
   },
-  "homepage": "https://mabroukmehdy-byte.github.io/smash-berliner"
+  "homepage": "https://mabroukmehdy-byte.github.io/smash-berliner-premium"
 }

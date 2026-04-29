@@ -85,11 +85,11 @@ const HOURS = [
 ];
 
 const GALLERY = [
-  { url: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?crop=entropy&cs=srgb&fm=jpg&q=85&w=1300', span: 'md:col-span-7 md:row-span-2', alt: 'Smash burger signature' },
-  { url: 'https://images.unsplash.com/photo-1699728088614-7d1d4277414b?crop=entropy&cs=srgb&fm=jpg&q=85&w=1100', span: 'md:col-span-5', alt: 'Doner berlinois' },
-  { url: 'https://images.unsplash.com/photo-1518013431117-eb1465fa5752?crop=entropy&cs=srgb&fm=jpg&q=85&w=1100', span: 'md:col-span-5', alt: 'Frites maison' },
-  { url: 'https://images.unsplash.com/photo-1550317138-10000687a72b?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200', span: 'md:col-span-5', alt: 'Cheeseburger' },
-  { url: 'https://images.pexels.com/photos/20722029/pexels-photo-20722029.jpeg?auto=compress&w=1200', span: 'md:col-span-7', alt: 'Burger XXL' },
+  { url: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?crop=entropy&cs=srgb&fm=jpg&q=85&w=1300', span: 'md:col-span-7 md:row-span-2', alt: 'Smash burger signature', h: 'h-[260px] sm:h-[320px] md:h-full', pos: 'object-center' },
+  { url: 'https://images.unsplash.com/photo-1699728088614-7d1d4277414b?crop=entropy&cs=srgb&fm=jpg&q=85&w=1100', span: 'md:col-span-5', alt: 'Doner berlinois', h: 'h-[210px] sm:h-[240px] md:h-full', pos: 'object-center' },
+  { url: 'https://images.unsplash.com/photo-1518013431117-eb1465fa5752?crop=entropy&cs=srgb&fm=jpg&q=85&w=1100', span: 'md:col-span-5', alt: 'Frites maison', h: 'h-[170px] sm:h-[190px] md:h-full', pos: 'object-center' },
+  { url: 'https://images.unsplash.com/photo-1550317138-10000687a72b?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200', span: 'md:col-span-5', alt: 'Cheeseburger', h: 'h-[220px] sm:h-[250px] md:h-full', pos: 'object-center' },
+  { url: 'https://images.pexels.com/photos/20722029/pexels-photo-20722029.jpeg?auto=compress&w=1200', span: 'md:col-span-7', alt: 'Burger XXL', h: 'h-[240px] sm:h-[280px] md:h-full', pos: 'object-top' },
 ];
 
 function useReveal() {
@@ -221,13 +221,13 @@ function Hero() {
             <img
               src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?crop=entropy&cs=srgb&fm=jpg&q=85&w=950"
               alt="Smash burger signature"
-              className="w-full h-[420px] md:h-[520px] object-cover brutal-border brutal-shadow"
+              className="w-full h-[300px] sm:h-[360px] md:h-[440px] object-cover brutal-border brutal-shadow"
             />
             <div className="hidden md:block absolute -bottom-8 -left-10 rotate-[-6deg]">
               <img
                 src="https://images.unsplash.com/photo-1699728088614-7d1d4277414b?crop=entropy&cs=srgb&fm=jpg&q=85&w=450"
                 alt="Doner"
-                className="w-44 h-44 object-cover brutal-border brutal-shadow-sm"
+                className="w-32 h-32 lg:w-40 lg:h-40 object-cover brutal-border brutal-shadow-sm"
               />
             </div>
             <div className="absolute -top-5 -right-5 bg-[var(--mustard)] brutal-border brutal-shadow-sm px-4 py-2 rotate-[6deg] font-display text-2xl">
@@ -279,7 +279,7 @@ function MenuSection() {
         <div className="grid md:grid-cols-2 gap-8 mt-12">
           {SIGNATURES.map((item) => (
             <article key={item.name} className="reveal bg-white brutal-border brutal-shadow overflow-hidden flex flex-col">
-              <div className="relative h-56 overflow-hidden border-b-2 border-[var(--ink)]">
+              <div className="relative h-44 sm:h-48 overflow-hidden border-b-2 border-[var(--ink)]">
                 <img
                   src={item.img}
                   alt={item.name}
@@ -354,7 +354,7 @@ function AboutSection() {
           <img
             src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
             alt="Equipe en cuisine"
-            className="w-full h-[500px] object-cover brutal-border"
+            className="w-full h-[320px] sm:h-[380px] md:h-[440px] object-cover brutal-border"
             style={{ borderColor: 'var(--bone)' }}
           />
           <div className="absolute -bottom-6 -left-6 bg-[var(--mustard)] text-[var(--ink)] p-5 brutal-border max-w-xs">
@@ -377,13 +377,13 @@ function GallerySection() {
             CE QU'ON SERT<span className="text-[var(--ketchup)]">.</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-12 md:auto-rows-[220px] gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 md:auto-rows-[150px] lg:auto-rows-[180px] gap-4 md:gap-6">
           {GALLERY.map((item) => (
             <div key={item.url} className={`reveal relative overflow-hidden brutal-border ${item.span}`}>
               <img
                 src={item.url}
                 alt={item.alt}
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                className={`w-full ${item.h} ${item.pos} md:h-full object-cover transition-transform duration-700 hover:scale-105`}
               />
             </div>
           ))}
