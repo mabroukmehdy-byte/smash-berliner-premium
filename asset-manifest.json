@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/smash-berliner-premium/static/css/main.31f0810b.css",
-    "main.js": "/smash-berliner-premium/static/js/main.314bdf3b.js",
+    "main.css": "/smash-berliner-premium/static/css/main.11fa0985.css",
+    "main.js": "/smash-berliner-premium/static/js/main.6a5cb862.js",
     "static/js/453.336ba5a8.chunk.js": "/smash-berliner-premium/static/js/453.336ba5a8.chunk.js",
     "index.html": "/smash-berliner-premium/index.html",
-    "main.31f0810b.css.map": "/smash-berliner-premium/static/css/main.31f0810b.css.map",
-    "main.314bdf3b.js.map": "/smash-berliner-premium/static/js/main.314bdf3b.js.map",
+    "main.11fa0985.css.map": "/smash-berliner-premium/static/css/main.11fa0985.css.map",
+    "main.6a5cb862.js.map": "/smash-berliner-premium/static/js/main.6a5cb862.js.map",
     "453.336ba5a8.chunk.js.map": "/smash-berliner-premium/static/js/453.336ba5a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31f0810b.css",
-    "static/js/main.314bdf3b.js"
+    "static/css/main.11fa0985.css",
+    "static/js/main.6a5cb862.js"
   ]
 }
