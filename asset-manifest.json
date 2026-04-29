@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/smash-berliner-premium/static/css/main.11fa0985.css",
-    "main.js": "/smash-berliner-premium/static/js/main.6a5cb862.js",
+    "main.css": "/smash-berliner-premium/static/css/main.464eed89.css",
+    "main.js": "/smash-berliner-premium/static/js/main.5d3ab045.js",
     "static/js/453.336ba5a8.chunk.js": "/smash-berliner-premium/static/js/453.336ba5a8.chunk.js",
     "index.html": "/smash-berliner-premium/index.html",
-    "main.11fa0985.css.map": "/smash-berliner-premium/static/css/main.11fa0985.css.map",
-    "main.6a5cb862.js.map": "/smash-berliner-premium/static/js/main.6a5cb862.js.map",
+    "main.464eed89.css.map": "/smash-berliner-premium/static/css/main.464eed89.css.map",
+    "main.5d3ab045.js.map": "/smash-berliner-premium/static/js/main.5d3ab045.js.map",
     "453.336ba5a8.chunk.js.map": "/smash-berliner-premium/static/js/453.336ba5a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11fa0985.css",
-    "static/js/main.6a5cb862.js"
+    "static/css/main.464eed89.css",
+    "static/js/main.5d3ab045.js"
   ]
 }
